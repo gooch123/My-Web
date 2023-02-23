@@ -1,32 +1,35 @@
-* {
-  box-sizing: border-box;
+body {
+  display: flex;
+  flex-direction: column;
 }
 section {
-  width: 540px;
+  display: flex;
+  width: auto;
   border: 1px solid gray;
-  margin: auto;
 }
 header {
   border-bottom: 1px solid gray;
   text-align: center;
 }
 nav {
-  float: left;
-  width: 120px;
+  flex-basis: 150px;
   border-right: 1px solid gray;
 }
 article {
-  float: left;
-  width: 300px;
   border-left: 1px solid gray;
   padding: 10px;
   margin-left: -1px;
-  border-right: 1px solid gray;
+  height: 600px;
+  flex-grow: 1;
+  text-align: center;
 }
-
 footer {
-  clear: both;
-  border-top: 1px solid gray;
+  border: 1px solid gray;
   text-align: center;
   padding: 20px;
+}
+aside {
+  border-left: 1px solid gray;
+  flex-basis: 250px;
+  text-align: center;
 }
