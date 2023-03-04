@@ -16,6 +16,7 @@ nav {
   border-right: 1px solid gray;
 }
 article {
+  display: flex;
   border-left: 1px solid gray;
   padding: 10px;
   margin-left: -1px;
@@ -32,4 +33,28 @@ aside {
   border-left: 1px solid gray;
   flex-basis: 250px;
   text-align: center;
+}
+#box {
+  margin: 5px;
+  border: 1px solid gray;
+  flex-grow: 1;
+}
+.no_marker {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.p_list {
+  border-bottom: 1px solid gray;
+  text-align: center;
+  padding: 5px;
+}
+.sub_list {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+.sub_list.open {
+  max-height: 200px;
 }
